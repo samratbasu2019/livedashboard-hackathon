@@ -12,9 +12,9 @@ bin/kafka-topics.sh --create --topic quickstart-events --bootstrap-server localh
 bin/kafka-console-producer.sh --topic quickstart-events --bootstrap-server localhost:9092
 bin/kafka-console-consumer.sh --topic quickstart-events --from-beginning --bootstrap-server localhost:9092
 
-bin/kafka-topics.sh --create --topic livetemperature --bootstrap-server localhost:9092
+bin/kafka-topics.sh --create --topic livedashboard --bootstrap-server localhost:9092
 
-bin/kafka-console-producer.sh --topic livetemperature --bootstrap-server localhost:9092
+bin/kafka-console-producer.sh --topic livedashboard --bootstrap-server localhost:9092
 
 bin/kafka-topics.sh --list --zookeeper localhost:2181
 
